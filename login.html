@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Login Test 2</title>
+</head>
+
+<body>
+    <div id="login">
+        <form>
+            <fieldset>
+                <legend>Connection Credentials</legend>
+                <div>
+                    <!-- <br> -->
+                    <label for="server">Server:</label>
+                    <br>
+                    <input class="" placeholder="" type="text" id="server" name="server" value="" required autofocus />
+                </div>
+                <div>
+                    <label for="username">Username:</label>
+                    <br>
+                    <input class="" placeholder="" type="text" name="username" id="username">
+                </div>
+                <div>
+                    <label for="password">Password:</label>
+                    <br>
+                    <input class="" type="password" name="password" id="password">
+                </div>
+                <br>
+                <span>
+                    <label>
+                        <!-- <input type="checkbox" name="remember" checked="true">Remember Me</label> -->
+                        <input class="btn" type="button" id="btnConnect" value="Connect">
+                        <input class="btn btn-disconnect" type="button" id="btnDisconnect" value="Disconnect" hidden>
+                </span>
+            </fieldset>
+        </form>
+
+    </div>
+    <br>
+    <div id="notificationInfo">
+        <input type="button" value="Send Notification" id="btnSendNotification">
+        <input type="text" name="notificationData" id="notificationData" placeholder="sample notification data">
+        <!-- <div id='notificationLoader'> -->
+        <img src="images/ajax-loader4.gif" id="notificationLoader">
+        <!-- </div> -->
+    </div>
+
+    <div class="tabPanel">
+        <div id="icwsInfo" class="diagnostic-message">
+            --System Messages --
+        </div>
+    </div>
+
+    <script src="js/common.js"></script>
+    <script src="js/loader.js"></script>
+
+
+</body>
+
+</html>
